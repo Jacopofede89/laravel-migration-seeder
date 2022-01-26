@@ -17,7 +17,7 @@ class CreateSongsTable extends Migration
             $table->id();
 
             $table->string('title', 100);
-
+            
             $table->string('week_position', 10);
 
             $table->string('entry_position', 10);
@@ -26,7 +26,7 @@ class CreateSongsTable extends Migration
 
             $table->string('total_weeks', 10);
 
-            $table->string('type_of_albums', 10);
+            $table->text('type_of_albums');
 
             $table->date('date_of_relese');
 

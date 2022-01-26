@@ -26,13 +26,11 @@ class CreateArtistsTable extends Migration
 
             $table->string('phone')-> nullable();
 
-            $table->string('email', 20);
+            $table->string('email');
 
             $table->text('discography');
 
             $table->text('description');
-
-
 
             $table->timestamps();
         });
